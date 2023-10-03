@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #c3c3c5;
+            background-color: #0d0618;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        input[type="email"],
+        textarea,
+        .container {
+            border: #7c6c04 1px solid;
+        }
+
+
+        .container {
+            min-width: 30em;
+            border-radius: 5px;
+            box-shadow: -1px 0 5px #555353;
+            padding: 2em;
+            text-align: center;
+            background-color: #1d1d1d;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="email"],
+        textarea {
+            width: 100%;
+            color: white;
+            background-color: #2b2d30;
+            padding: 10px;
+            border-radius: 3px;
+            font-size: 16px;
+            outline: none;
+            box-sizing: border-box;
+        }
+        textarea {
+            min-height: 20em;
+        }
+
+        button {
+            background-color: #3e3e3f;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            font-size: 18px;
+            cursor: pointer;
+
+        }
+
+        button:hover {
+            background-color: #6f6017;
+            box-shadow: 0 0 3px #b99e8bd1;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 style="color: #e7c615e0; text-shadow: -3px -1px 11px #b99e8bd1;">Pioneer Style</h1>
+    <form action="" method="POST">
+        <div class="form-group">
+            <label for="efail">Email</label>
+            <input type="email" id="efail" name="efail" value="" required>
+            <input type="hidden" id="email" name="email" value="" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Сообщение</label>
+            <textarea id="message"
+                      name="message"
+                      rows="4"
+                      required
+                      placeholder="В текущей реализации для отправки сообщений необходимо подключение axios"
+            ></textarea>
+        </div>
+        <div class="form-group">
+            <button type="button">Отправить</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
