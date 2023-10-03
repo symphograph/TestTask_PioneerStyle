@@ -47,7 +47,7 @@ select users.id as id,
        groups.name as groupName
 from users
 inner join groups 
-    on users.group = groups.id
+    on users.groupId = groups.id
 where users.groupId = 1
 /*order by name*/;
 ```
@@ -164,7 +164,7 @@ while($arData = $res->GetNext())
 
 ### Результат
 
-#### [Пример обработки форм обратной связи с использованием PHP](Fidback)
+#### [Пример обработки форм обратной связи с использованием PHP](Feedback)
 Пример содержит несколько классов для обработки данных формы, полученных разными методами HTTP (GET и POST) и разной логикой валидации.
 
 <details open>
