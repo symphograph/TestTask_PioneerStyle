@@ -2,9 +2,14 @@
 
 Есть таблица Users (тестирование на знание SQL)
 
-Нужно написать один SQL запрос, чтобы получить пользователей из первой группы т.е. пользователей, у которых group = 1. Результат должен вывести колонки:
-id(пользователя) / name(пользователя) / name_group (группы)
-Подсказка: написать JOIN запрос
+Нужно написать один SQL запрос, чтобы получить пользователей из первой группы т.е. пользователей, у которых groupId = 1. 
+
+Результат должен вывести колонки:
+- id(пользователя) 
+- name(пользователя) 
+- name_group (группы)
+
+<small>Подсказка: написать JOIN запрос</small>
 <details>
 <summary style="cursor: pointer">
 Таблица
@@ -14,7 +19,7 @@ id(пользователя) / name(пользователя) / name_group (гр
 </details>
 
 ### Решение
-<details open>
+<details>
 <summary style="cursor: pointer">
 Спойлер
 
@@ -57,7 +62,7 @@ where users.groupId = 1
 # 2. Задание
 
 Выберите правильный вариант А или В. И напишите его преимущество.
-<details open>
+<details>
 <summary style="cursor: pointer">Вариант А</summary>
 
 ```php
@@ -76,7 +81,7 @@ foreach($arItems as $key => $arVal)
 </details>
 
 
-<details open>
+<details>
 <summary style="cursor: pointer">Вариант B</summary>
 
 ```php
@@ -167,12 +172,13 @@ while($arData = $res->GetNext())
 
 
 ### Результат
+<details>
+<summary style="cursor: pointer">Структура проекта</summary>
 
 #### [Пример обработки форм обратной связи с использованием PHP](Feedback)
 Пример содержит несколько классов для обработки данных формы, полученных разными методами HTTP (GET и POST) и разной логикой валидации.
 
-<details open>
-<summary style="cursor: pointer">Структура проекта</summary>
+
 
 - [`FormHandlerITF.php`]()
 
